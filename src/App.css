@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +34,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section .app-section{
+  display: flex;
+  min-height: 100vh- 20px;
+  background-color: gray;
+}
+
+header .app-header{
+  height: 30px;
+  display: flex;
+  background: blueviolet
+}
+
+footer .app-footer{
+  height: 10px;
+}
+
+.image-list {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+}
+
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
 }
