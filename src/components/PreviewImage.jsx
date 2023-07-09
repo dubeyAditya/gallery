@@ -24,8 +24,12 @@ const PreviewImage = ({ isVisible, images, index, setVisible }) => {
     );
   };
 
+  const handleClose = () => {
+    setVisible(false)
+  }
+
   return (
-    <Modal open={isVisible} footer={null} onClose={() => setVisible(false) } closable={true} >
+    <Modal open={isVisible} footer={null} onCancel={handleClose} closable={true} >
       <div className='carousel-container'>
         <button onClick={goToPreviousImage} className='carousel-button'>
           {' '}
